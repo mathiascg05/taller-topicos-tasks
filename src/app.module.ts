@@ -10,6 +10,7 @@ import { LoggerModule } from 'nestjs-pino';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
 import { ProjectsModule } from './projects/projects.module';
+import { SeedModule } from './seed/seed.module';
 import { TasksModule } from './tasks/tasks.module';
 import { UsersModule } from './users/users.module';
 
@@ -63,6 +64,7 @@ import { UsersModule } from './users/users.module';
     TasksModule,
     UsersModule,
     ProjectsModule,
+    SeedModule,
   ],
   providers: [
     // Aspecto transversal: logging de todas las operaciones GraphQL.
