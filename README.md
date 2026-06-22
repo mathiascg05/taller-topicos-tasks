@@ -44,6 +44,14 @@ npm run start:dev
 
 El servidor queda disponible en `http://localhost:3000/graphql`, donde se puede usar el playground (Apollo Sandbox) para probar las operaciones.
 
+### Datos de ejemplo
+
+La primera vez que se levanta el servidor con la base de datos vacía, se cargan
+automáticamente algunos usuarios, proyectos y tareas de ejemplo (ver
+`src/seed/seed.service.ts`). La carga es idempotente: si ya hay datos no se
+vuelve a sembrar, por lo que los registros que se creen o modifiquen después se
+conservan entre reinicios.
+
 ## Operaciones GraphQL
 
 **Tareas**
